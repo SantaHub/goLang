@@ -100,4 +100,26 @@ fmt.Println(num)
 if, for, switch : all code inside the statement
 switch or select : clauses get a block  
 
+## Composite Data type
 
+Arrays :
+    all values initailized to zero
+```
+    var array [5]int
+    array[1] = 2
+    fmt.printf(x[0]) // prints 0
+```
+    Iteration 
+```
+    array := [...]int{1,2,3,4}
+    for i,v range array {
+        fmt.Printf("index %d contains %d", i, v)
+    }
+```
+
+Array Literal :
+    used to initailize an array
+```
+    var x [5] int = [5]{1,2,3,4,5} // RHS is the literal
+    x := [...]int{1,2,3,4} // initializes array with 4 literals
+```

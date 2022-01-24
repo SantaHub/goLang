@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 func main(){
+	var x,z int;
 	fmt.Println("Hello World !")
 }
 

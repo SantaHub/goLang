@@ -126,8 +126,12 @@ Array Literal :
 
 
 Slice :
-    a section of an array
+    a section of an array. Slices only have value refed in array. Any change will be reflected
 ```
     arr := [...] string {1,2,3,4,5}
     s1 := arr[1:3] // slice
+    len(s1) // returns size of s1
+    cap(s1) // will be the size of the array. hence 5
+
+    
 ```

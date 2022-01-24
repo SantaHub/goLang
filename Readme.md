@@ -123,3 +123,11 @@ Array Literal :
     var x [5] int = [5]{1,2,3,4,5} // RHS is the literal
     x := [...]int{1,2,3,4} // initializes array with 4 literals
 ```
+
+
+Slice :
+    a section of an array
+```
+    arr := [...] string {1,2,3,4,5}
+    s1 := arr[1:3] // slice
+```

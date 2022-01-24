@@ -38,6 +38,52 @@ Iota (enumerator) :
         wednesday 
     )
 
+## Control flow 
+
+if :
+
+```
+ if <condition> {
+    <statements>
+}
+    if x> 5 {
+        fmt.Println("> 5")
+    }
+```
+
+For : 
+```
+    for <init>; <condition>; <update> { // these 3 are optional. without any its an infinite loop
+        <statements>
+    }
+
+    for i:=0; i< 10; i++ {
+        fmt.Printf("%d", i);
+    }
+```
+
+Switch : 
+    Switch automatically breaks on a match.
+```
+    switch <var> {
+        case <value1> :
+            <statements>
+        case <Value2>:
+            <statements>
+        default:
+            <statements>
+    }
+
+    switch x {
+        case 1 :
+            fmt.Printf("Case 1")
+        case 2 :
+            fmt.Printf("case 2")
+        default :
+            fmt.Printf("case 3")
+    }
+
+```
 
 ## Blocks
 

@@ -65,7 +65,7 @@ For :
 Switch : 
     Switch automatically breaks on a match.
 ```
-    switch <var> {
+    switch <tag> { // tag is optional, then cases are conditions.
         case <value1> :
             <statements>
         case <Value2>:
@@ -74,6 +74,7 @@ Switch :
             <statements>
     }
 
+    var x int = 10;
     switch x {
         case 1 :
             fmt.Printf("Case 1")
@@ -84,6 +85,15 @@ Switch :
     }
 
 ```
+
+## User input 
+
+fmt.Scan() does the scanning
+
+var num int
+fmt.Println("Enter an int")
+fmt.Scan(&num) // takes in the int and assign to num.
+fmt.Println(num)
 
 ## Blocks
 
